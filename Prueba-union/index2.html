@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="fondo">
+    <nav class="backdrop-blur-md shadow-lg rounded-xl mx-24">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/img/logo.png" class="h-8" alt="Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+            </li>
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow w-44 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-white dark:text-white bg-blue-500" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 dark:hover:text-blue-700">Dashboard</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 dark:hover:text-blue-700">Settings</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 dark:hover:text-blue-700">Earnings</a>
+                      </li>
+                    </ul>
+                    <div class="py-1" >
+                      <a href="#" class="block px-4 py-2 text-white dark:hover:text-blue-700 bg-blue-400">Sign out</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">servics</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div>
+    <div class="overflow-x-auto mt-[20vh]">
+      <table class="table-auto border-collapse w-full  ">
+        <thead>
+          <tr class="shadow-lg">
+            <th class="px-4 py-2 bg-blue-500">Tipo</th>
+            <th class="px-4 py-2 bg-blue-500">Eficaz Contra</th>
+            <th class="px-4 py-2 bg-blue-500">Vulnerable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="h-8"src="/img/Acero.jpg" alt="acero">
+                <span class="ml-2">Acero</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Hada</li>
+                <li>Hielo</li>
+                <li>Roca</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Fuego</li>
+                <li>Lucha</li>
+                <li>Tierra</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="size-[30px]" src="/img/Agua.jpg" alt="agua">
+                <span class="ml-2">Agua</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Fuego</li>
+                <li>Roca</li>
+                <li>Tierra</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Electrico</li>
+                <li>Planta</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="size-[30px]" src="/img/Bicho.jpg" alt="bicho">
+                <span class="ml-2">Bicho</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Planta</li>
+                <li>Psiquico</li>
+                <li>Siniestro</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Fuego</li>
+                <li>Roca</li>
+                <li>Volador</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="size-[30px]" src="/img/Dragon.jpg" alt="dragon">
+                <span class="ml-2">Dragon</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Dragon</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Dragon</li>
+                <li>Hada</li>
+                <li>Hielo</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="size-[30px]" src="/img/Electrico.jpg" alt="electrico">
+                <span class="ml-2">Electrico</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Agua</li>
+                <li>Volador</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Tierra</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2 text-center">
+              <div class="flex items-center justify-center">
+                <img class="size-[30px]" src="/img/Fantasma.jpg" alt="fantasma">
+                <span class="ml-2">Fantasma</span>
+              </div>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Fantasma</li>
+                <li>Volador</li>
+              </ul>
+            </td>
+            <td class="border px-4 py-2 text-center">
+              <ul class="list-disc list-inside">
+                <li>Fantasma</li>
+                <li>Siniestro</li>
+              </ul>
+            </td>
+          <!-- Agrega más filas según sea necesario -->
+  </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
